@@ -1,9 +1,12 @@
 /*6.Given an array of numbers:
    a)remove duplicates
    b)return a new array with squared values*/
-var arr1 = [5,2,3,5,2,7,9];
-var arr2 = [...new Set(arr1)];
-var squared= arr2.map(n=>n*n);
-document.getElementById("task6").innerHTML="Unique:"+arr1+
-"|Squared"+arr2;
+let arr = [1, 2, 2, 3, 4, 4];
+
+let uniqueArr = [...new Set(arr)];
+let squaredArr = uniqueArr.map(n => n * n);
+
+document.getElementById("task6").innerText =
+    "Unique: " + uniqueArr + " | Squared: " + squaredArr;
+
 
